@@ -215,7 +215,7 @@ window.ixmaps = window.ixmaps || {};
                             svg.append("text")
                                 .attr("x", 0)
                                 .attr("y", nHeight / 6.5 + nFontSize * 1)
-                                .attr("style", "font-family:arial;font-size:" + nFontSize + "px;text-anchor:middle;fill:red;fill-opacity:" + szTextOpacity + ";stroke:none;opacity:" + szOpacity + ";pointer-events:none")
+                                .attr("style", "font-family:arial;font-size:" + nFontSize + "px;text-anchor:middle;fill:" + (args.theme.szValueColor || szColor) + ";fill-opacity:" + szTextOpacity + ";stroke:none;opacity:" + szOpacity + ";pointer-events:none")
                                 .text(szText);
                         } else {
                             svg.append("text")
