@@ -105,7 +105,7 @@ window.ixmaps = window.ixmaps || {};
         
         // 1. get the height from args
 		
-		var nValue = args.values[(args.theme.nActualFrame||args.class||0)];
+		var nValue = args.value || args.values[(args.theme.nActualFrame||args.class||0)];
 		var nMax = Math.max(args.theme.nMax,Math.abs(args.theme.nMin));
 		if ( args.theme.nMinValue && (nValue < args.theme.nMinValue) ){
 			return false;
